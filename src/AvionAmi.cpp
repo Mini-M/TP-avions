@@ -166,10 +166,6 @@ void AvionAmi::nouvelleDirection()
         }
     }
 
-	typedef struct coupleDirection{  //structure permettant une sortie plus jolie pour le prochain vecteur    -- L.O.L.
-        int composanteVecteur;
-        int *valeurDirectionActuelle;
-    } coupleDirection;
     coupleDirection dirX, dirY, dirZ;
     
     dirX.composanteVecteur = Vx;

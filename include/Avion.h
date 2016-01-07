@@ -2,7 +2,7 @@
 #define AVION_H
 
 #ifndef __APPLE__
-#include <windows.h>
+//#include <windows.h>
 #endif
 
 #include <vector>
@@ -76,6 +76,11 @@ public:
     virtual void deplacement()=0;
 	virtual void tir()=0; //modifie l'avion cible
 	virtual void nouvelleDirection()=0;
+};
+
+struct coupleDirection{  //structure permettant une sortie plus jolie pour le prochain vecteur
+	int composanteVecteur;
+        int *valeurDirectionActuelle;
 };
 
 #endif

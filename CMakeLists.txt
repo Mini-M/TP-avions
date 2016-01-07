@@ -13,6 +13,7 @@ file(
 )
 
 add_executable( tp_avions ${source_files})
+SET(CMAKE_CXX_FLAG "-std=c++0x")
 
 INCLUDE_DIRECTORIES(${OPENSCENEGRAPH_INCLUDE_DIRS} include)
 TARGET_LINK_LIBRARIES(tp_avions ${OPENSCENEGRAPH_LIBRARIES} )

@@ -76,10 +76,6 @@ void AvionEnnemi::nouvelleDirection(){
     Vy = avions[iDistanceMin]->getY()+avions[iDistanceMin]->getDy()-y;
     Vz = avions[iDistanceMin]->getZ()+avions[iDistanceMin]->getDz()-z;
 
-    struct coupleDirection{  //structure permettant une sortie plus jolie pour le prochain vecteur
-        int composanteVecteur;
-        int *valeurDirectionActuelle;
-    };
     coupleDirection dirX, dirY, dirZ;
     
     dirX.composanteVecteur = Vx;
