@@ -28,8 +28,8 @@ int main()
 /* SPACESHIPS	*/
 
 	//Loading the SPACESHIPS nodes
-	osg::ref_ptr<osg::Node> xWing (osgDB::readNodeFile("C:\\Users\\eleve\\Documents\\Visual Studio 2012\\Projects\\TPosgAvions\\TPosgAvions\\model\\StarWars\\star wars x-wing.3ds"));
-	osg::ref_ptr<osg::Node> tFighter (osgDB::readNodeFile("C:\\Users\\eleve\\Documents\\Visual Studio 2012\\Projects\\TPosgAvions\\TPosgAvions\\model\\mechant\\TF_3DS02.3ds"));
+	osg::ref_ptr<osg::Node> xWing (osgDB::readNodeFile("/home/user/Documents/MEDEV/TP-avions/y-wing/y-wing.3ds"));
+	osg::ref_ptr<osg::Node> tFighter (osgDB::readNodeFile("/home/user/Documents/MEDEV/TP-avions/E-TIE-I/E-TIE-I.3ds"));
 
 /* Scale Matrix	*/
 
@@ -39,10 +39,10 @@ int main()
 
 	// Scale matrix
 	osg::Matrix matrixXWing;
-	matrixXWing.makeScale(osg::Vec3f(0.06,0.06,0.06));
+	matrixXWing.makeScale(osg::Vec3f(0.001,0.001,0.001));
 
 	osg::Matrix matrixTFighter;
-	matrixTFighter.makeScale(osg::Vec3f(0.005,0.005,0.005));
+	matrixTFighter.makeScale(osg::Vec3f(0.003,0.003,0.003));
 
 	//Set transformation node parameters
 	matXWing->addChild(xWing.get());
